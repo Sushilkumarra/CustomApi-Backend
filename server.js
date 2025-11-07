@@ -8,9 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // to parse JSON body
 
-app.use(cors({
-  origin: ["https://custom-api-frontend.vercel.app", "http://localhost:5173"]
-}));
+
 
 // connect MongoDB
 mongoose.connect(process.env.MONGO_URI)
